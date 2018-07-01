@@ -1,5 +1,3 @@
-process.env.test = 'some-value'
+const hasGlobal = require('../cjs')
 
-const foo = require('../cjs')
-
-test('test', () => expect(foo()).toBe('some-value'))
+test('test', () => expect(hasGlobal).toBe(true))

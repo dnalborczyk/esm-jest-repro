@@ -1,3 +1,1 @@
-module.exports = function foo() {
-  return process.env.test
-}
+module.exports = global != null

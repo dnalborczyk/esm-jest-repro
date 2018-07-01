@@ -1,9 +1,7 @@
 require = require('esm')(module)
 
-process.env.test = 'some-value'
-
-const foo = require('../cjs')
+const hasGlobal = require('../cjs')
 // or:
-// const { default: foo } = require('../es')
+// const { default: hasGlobal } = require('../es')
 
-test('test', () => expect(foo()).toBe('some-value'))
+test('test', () => expect(hasGlobal).toBe(true))

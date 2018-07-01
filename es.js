@@ -1,3 +1,1 @@
-export default function foo() {
-  return process.env.test
-}
+export default global != null
